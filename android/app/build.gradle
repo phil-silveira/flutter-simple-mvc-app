@@ -46,7 +46,7 @@ android {
         applicationId "com.example.github_user_search"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode flutterVersionCode.toInteger()
+        versionCode System.getenv('APPCENTER_BUILD_ID').toInteger()
         versionName flutterVersionName
     }
 
